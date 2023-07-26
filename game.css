@@ -1,0 +1,102 @@
+
+body{
+  background: lightblue url(https://variety.com/wp-content/uploads/2022/07/GettyImages-1306727945-1.jpg?w=681&h=383&crop=1) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+} 
+
+ #Box{
+ margin:auto ;
+ text-align:center;
+ background-color: rgba(225, 141, 219, 0.4);
+ -webkit-backdrop-filter: blur(5px);
+ backdrop-filter: blur(5px);
+ padding: 50px;
+ font-weight: bold; 
+ height: 50%;
+width: 50%;
+margin-top:30px;
+ }
+ .keyBorde{
+  margin-top:80px ;
+     margin:auto ;
+    }
+    #text-Box{
+      text-align: center;
+      color:rgb(43, 1, 39);
+      font-size:20px;
+      font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Orbitron', sans-serif;
+    }
+    .buttonClass {
+      margin-top:10px ;
+      font-size:14px;
+      font-family:Comic Sans MS;
+      width:159px;
+      height:44px;
+      border-width:1px;
+      color:rgba(0, 0, 0, 1);
+      border-color:rgba(24, 13, 12, 1);
+      font-weight:bold;
+      font-style:italic;
+      border-top-right-radius:18px;
+      border-bottom-left-radius:18px;
+      border-bottom-right-radius:18px;
+      box-shadow: -7px -4px 4px 0px rgba(208, 126, 224, 1);
+      text-shadow: -2px -6px 0px rgba(189, 16, 224, 1);
+      background:linear-gradient(rgba(215, 147, 245, 1), rgba(187, 37, 202, 1));
+    }
+    
+    .buttonClass:hover {
+      background: linear-gradient(rgba(187, 37, 202, 1), rgba(215, 147, 245, 1));
+    }
+
+
+    .btn-let {
+      font-size:15px;
+      font-family:Arial;
+      width:35px;
+      height:35px;
+      border-width:1px;
+      color:#fff;
+      border-color:#f1f3f4;
+      font-weight:bold;
+      border-top-left-radius:8px;
+      border-top-right-radius:8px;
+      border-bottom-left-radius:8px;
+      border-bottom-right-radius:8px;
+      box-shadow: 0px 10px 14px -7px #0a1314;
+      text-shadow: 0px 1px 0px #bc66ce;
+      background:linear-gradient(#ce25f0, #8211e5);
+    }
+    
+    .btn-let:hover {
+      background: linear-gradient(#f197ee, #98c3ee);
+    }
+  #keyword{
+    font-size:35px;
+    color:rgb(213, 61, 227);
+    font-family: 'Cinzel', serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'El Messiri', sans-serif;
+    font-family: 'Neonderthaw', cursive;
+    font-family: 'Orbitron', sans-serif;
+  }
+  #wordSpotLight{
+    text-align: center;
+    color:rgb(43, 1, 39);
+    font-size:20px;
+    font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Neonderthaw', cursive;
+font-family: 'Orbitron', sans-serif;
+
+  }
+

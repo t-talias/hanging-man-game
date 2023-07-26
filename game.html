@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Courgette&family=El+Messiri:wght@400;700&family=Neonderthaw&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+</head>
+<body>
+   <div id="Box">
+   <div class="text-Box">
+
+    <!--Setting the theme of the game-->
+ <div id="text-Box"> Please choose a subject for the game:
+    <input id="subject" list="s"/> 
+     <datalist id="s">
+         <option value="Animals">
+         <option value="Name">
+         <option value="Fruits and Vegetables">
+     </datalist>  
+     <br>
+ </div>
+ <a href="#" onclick="getSubject()" ><button class="buttonClass" >Rand Word</button></a>
+
+<p id="wordSpotLight" >Guess the answer chosen here:</p> 
+<br>
+<div id="keyword"></div>
+<br> 
+<img  width='40%' height='50%' id="HangManImg" src="F:\לימודים שנה ב\מיישר פין-javascripe\work\img\1.png" >
+<br>
+
+    <!--Letter keyboard -->
+    <table class="keyBorde">
+      <tbody>
+          <tr>
+              <td><button onclick="handleGuess(answer , id)" id="a" class="btn-let">a</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="b" class="btn-let">b</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="c" class="btn-let">c</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="d" class="btn-let">d</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="e" class="btn-let">e</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="f" class="btn-let">f</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="g" class="btn-let">g</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="h" class="btn-let">h</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="i" class="btn-let">i</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="j" class="btn-let">j</button></td>
+          </tr>
+          <tr>
+              <td><button class="btn-let"></button></td>
+              <td><button onclick="handleGuess(answer , id)" id="k" class="btn-let">k</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="l" class="btn-let">l</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="m" class="btn-let">m</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="n" class="btn-let">n</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="o" class="btn-let">o</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="p" class="btn-let">p</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="q" class="btn-let">q</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="r" class="btn-let">r</button></td>
+              <td><button class="btn-let"></button></td>
+          <tr>
+              <td><button class="btn-let"></button></td>
+              <td><button onclick="handleGuess(answer , id)" id="s" class="btn-let">s</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="t" class="btn-let">t</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="u" class="btn-let">u</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="v" class="btn-let">v</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="w" class="btn-let">w</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="x" class="btn-let">x</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="y" class="btn-let">y</button></td>
+              <td><button onclick="handleGuess(answer , id)" id="z" class="btn-let">z</button></td>
+              <td><button class="btn-let"></button></td>
+      </tbody>
+    </table> 
+<br>
+</div>
+<br>
+
+<div class="mistakes" id="text-Box">wrong guesses:<span id="mistakesNow"> 0 </span> of <span id="mistakesAllowed">6</span></div>
+  <br>
+<a href="game0.html" id="text-Box">To start a new game click me </a>
+</div>
+</div>
+    <script src="game.js"></script>
+</body>
+</html>
